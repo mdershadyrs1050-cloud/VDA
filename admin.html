@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080f1e"><title>SKYNESS | Admin Command Center</title><link rel="stylesheet" href="styles.css">
+<style>
+.admin-body{background:radial-gradient(ellipse at 8% 0%,rgba(27,130,180,.16),transparent 34%),radial-gradient(ellipse at 92% 18%,rgba(191,151,77,.10),transparent 30%),linear-gradient(145deg,#070d19,#101b2d 55%,#080f1d);min-height:100vh}
+.admin-nav{background:rgba(7,14,27,.78);border-bottom:1px solid rgba(224,196,137,.18)}
+.admin-brand img{border:1px solid rgba(221,190,122,.45);box-shadow:0 0 30px rgba(207,168,94,.12)}
+.admin-tag{font-size:9px;letter-spacing:.2em;color:#c9ae75;border:1px solid rgba(201,174,117,.28);padding:7px 10px;border-radius:999px;background:rgba(201,174,117,.07)}
+.admin-layout{display:grid;grid-template-columns:235px 1fr;gap:24px;padding-top:34px;padding-bottom:80px}
+.sidebar{padding:18px;height:max-content;position:sticky;top:105px}
+.side-label{font-size:9px;letter-spacing:.2em;color:#8193aa;margin:12px 10px}
+.side-link{display:flex;gap:12px;align-items:center;padding:13px 12px;border-radius:12px;color:#c3d0df;font-size:12px;margin:4px 0}
+.side-link.active{background:linear-gradient(100deg,rgba(46,151,190,.2),rgba(207,168,94,.08));border:1px solid rgba(111,185,207,.2);color:#fff}
+.side-link span{font-size:17px;color:#d4b779}
+.admin-main{min-width:0}
+.dash-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:27px}
+.dash-top h1{font:800 clamp(28px,3.5vw,42px) Manrope;letter-spacing:-.045em;margin:8px 0}
+.dash-top p{color:#94a7bc;font-size:12px;margin:0}
+.live-pill{border:1px solid rgba(93,215,177,.28);background:rgba(54,180,140,.08);color:#8ce1c4;padding:9px 12px;border-radius:999px;font-size:10px;white-space:nowrap}
+.admin-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:20px}
+.admin-stat{padding:21px;position:relative;overflow:hidden}
+.admin-stat:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;right:-30px;top:-40px;background:rgba(92,193,221,.08);filter:blur(3px)}
+.stat-top{display:flex;align-items:center;justify-content:space-between;color:#9aadc1;font-size:11px}
+.stat-icon{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;color:#e0c17f;background:rgba(207,168,94,.1);border:1px solid rgba(207,168,94,.2);font-size:16px}
+.admin-stat b{display:block;font:800 31px Manrope;margin:15px 0 3px;color:#f5f7fb}
+.stat-foot{font-size:10px;color:#8196ac}
+.panel{padding:22px;margin-bottom:18px}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:17px}
+.panel-head h2{font:800 15px Manrope;margin:0}
+.panel-head p{font-size:10px;color:#879bb1;margin:5px 0 0}
+.search-box{background:rgba(3,11,23,.45);border:1px solid rgba(203,221,240,.14);padding:10px 13px;border-radius:11px;color:#dce8f4;width:min(230px,100%);outline:none}
+.table-wrap{overflow:auto}
+.table{width:100%;border-collapse:collapse;min-width:680px;font-size:11px}
+.table th{color:#8197ad;font-size:9px;letter-spacing:.15em;text-transform:uppercase;font-weight:700}
+.table th,.table td{padding:15px 12px;border-bottom:1px solid rgba(207,224,242,.09);text-align:left}
+.table td{color:#d8e4ef;white-space:pre-line}
+.customer-name{font-weight:700;color:#f2f6fa}
+.status{border-radius:999px;padding:6px 9px;font-size:9px;border:1px solid rgba(99,205,176,.24);background:rgba(66,178,143,.09);color:#9be3ca}
+.empty-state{text-align:center;padding:42px 15px;color:#91a5bb;font-size:12px}
+.empty-state .empty-icon{font-size:30px;margin-bottom:12px;color:#d1b577}
+.admin-note{font-size:10px;line-height:1.7;color:#8297ad;padding:14px 16px;border-left:2px solid #c9a968;background:rgba(201,169,104,.055);border-radius:0 10px 10px 0}
+.admin-login{max-width:430px;margin:75px auto;padding:34px}
+.admin-login .brand{margin-bottom:28px}
+.admin-login h2{font:800 27px Manrope}
+.admin-login .field input{margin-bottom:10px}
+@media(max-width:850px){.admin-layout{grid-template-columns:1fr}.sidebar{position:static;display:flex;gap:6px;overflow:auto}.side-label{display:none}.side-link{white-space:nowrap}.admin-stats{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.admin-stats{grid-template-columns:1fr}.dash-top{flex-direction:column}.panel{padding:15px}.sidebar{padding:10px}}
+</style></head>
+<body class="admin-body"><div class="topline"></div>
+<header class="header admin-nav"><div class="wrap nav">
+<a class="brand admin-brand" href="index.html"><img src="assets/skyness-logo.jpg" alt="SKYNESS logo"><span><strong>SKYNESS</strong><small>PRIVATE LIMITED</small></span></a>
+<div class="admin-tag">ADMIN COMMAND CENTER</div><a class="btn ghost" href="index.html">View Website ↗</a></div></header>
+<main class="wrap">
+<div id="login" class="admin-login glass">
+<a class="brand" href="index.html"><img src="assets/skyness-logo.jpg" alt="SKYNESS logo"><span><strong>SKYNESS</strong><small>SECURE ACCESS</small></span></a>
+<div class="kicker">Private workspace</div><h2>Welcome back.</h2>
+<p style="color:var(--muted);font-size:13px;line-height:1.8">Sign in to view and manage customer enquiries submitted through the VDA portal.</p>
+<div class="field"><label for="pass">Demo access key</label><input id="pass" type="password" placeholder="Enter access key"></div>
+<button class="btn" id="loginBtn" style="width:100%;margin-top:12px">Access dashboard ↗</button>
+<p class="note">Prototype access key: <b>skyness-demo</b></p>
+</div>
+<div id="dashboard" style="display:none" class="admin-layout">
+<aside class="sidebar glass"><div class="side-label">WORKSPACE</div><a class="side-link active" href="#"><span>◫</span> Overview</a><a class="side-link" href="vda.html"><span>◇</span> VDA enquiries</a><a class="side-link" href="index.html#contact"><span>✉</span> Website</a><div class="side-label" style="margin-top:24px">ACCOUNT</div><a class="side-link" href="#" id="logout"><span>↪</span> Sign out</a></aside>
+<section class="admin-main">
+<div class="dash-top"><div><div class="kicker">Operations overview</div><h1>Good to see you.</h1><p>Here’s what’s happening with your customer enquiries.</p></div><div class="live-pill">● DEMO WORKSPACE</div></div>
+<div class="admin-stats">
+<div class="admin-stat glass"><div class="stat-top">Total enquiries <span class="stat-icon">▤</span></div><b id="total">0</b><div class="stat-foot">All VDA requests captured here</div></div>
+<div class="admin-stat glass"><div class="stat-top">New enquiries <span class="stat-icon">✦</span></div><b id="newCount">0</b><div class="stat-foot">Waiting for team review</div></div>
+<div class="admin-stat glass"><div class="stat-top">Buy / Sell requests <span class="stat-icon">⇄</span></div><b id="buySell">0 / 0</b><div class="stat-foot">Buy requests / Sell requests</div></div>
+</div>
+<div class="panel glass"><div class="panel-head"><div><h2>Recent customer enquiries</h2><p>Customer requests submitted from the VDA service page</p></div><input class="search-box" id="search" placeholder="Search customers..."></div>
+<div class="table-wrap"><table class="table"><thead><tr><th>Customer</th><th>Request</th><th>Contact</th><th>Location</th><th>Received</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div id="empty" class="empty-state"><div class="empty-icon">◇</div><b>No enquiries yet</b><p>New VDA requests will appear here after customers submit the enquiry form.</p></div>
+</div>
+<div class="admin-note">Prototype note: this dashboard currently reads enquiries saved in this browser only. Before launch, connect Supabase authentication, database access policies and server-side email notifications. Do not use the demo passcode for a live website.</div>
+</section></div></main>
+<script src="common.js"></script><script src="admin.js"></script></body></html>
