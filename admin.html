@@ -48,21 +48,21 @@
 </style></head>
 <body class="admin-body"><div class="topline"></div>
 <header class="header admin-nav"><div class="wrap nav">
-<a class="brand admin-brand" href="index.html"><img src="assets/skyness-logo.jpg" alt="SKYNESS logo"><span><strong>SKYNESS</strong><small>PRIVATE LIMITED</small></span></a>
+<a class="brand admin-brand" href="index.html"><img src="assets/skyness-logo-midnight.png" alt="SKYNESS logo"><span><strong>SKYNESS</strong><small>PRIVATE LIMITED</small></span></a>
 <div class="admin-tag">ADMIN COMMAND CENTER</div><a class="btn ghost" href="index.html">View Website ↗</a></div></header>
 <main class="wrap">
 <div id="login" class="admin-login glass">
-<a class="brand" href="index.html"><img src="assets/skyness-logo.jpg" alt="SKYNESS logo"><span><strong>SKYNESS</strong><small>SECURE ACCESS</small></span></a>
+<a class="brand" href="index.html"><img src="assets/skyness-logo-midnight.png" alt="SKYNESS logo"><span><strong>SKYNESS</strong><small>SECURE ACCESS</small></span></a>
 <div class="kicker">Private workspace</div><h2>Welcome back.</h2>
 <p style="color:var(--muted);font-size:13px;line-height:1.8">Sign in to view and manage customer enquiries submitted through the VDA portal.</p>
-<div class="field"><label for="pass">Demo access key</label><input id="pass" type="password" placeholder="Enter access key"></div>
+<div class="field"><label for="adminEmail">Admin email</label><input id="adminEmail" type="email" autocomplete="username" placeholder="Admin email"></div><div class="field"><label for="pass">Admin password</label><input id="pass" type="password" placeholder="Enter access key"></div>
 <button class="btn" id="loginBtn" style="width:100%;margin-top:12px">Access dashboard ↗</button>
-<p class="note">Prototype access key: <b>skyness-demo</b></p>
+<p class="note" id="loginMessage" role="status">Authorized SKYNESS staff only.</p>
 </div>
 <div id="dashboard" style="display:none" class="admin-layout">
 <aside class="sidebar glass"><div class="side-label">WORKSPACE</div><a class="side-link active" href="#"><span>◫</span> Overview</a><a class="side-link" href="vda.html"><span>◇</span> VDA enquiries</a><a class="side-link" href="index.html#contact"><span>✉</span> Website</a><div class="side-label" style="margin-top:24px">ACCOUNT</div><a class="side-link" href="#" id="logout"><span>↪</span> Sign out</a></aside>
 <section class="admin-main">
-<div class="dash-top"><div><div class="kicker">Operations overview</div><h1>Good to see you.</h1><p>Here’s what’s happening with your customer enquiries.</p></div><div class="live-pill">● DEMO WORKSPACE</div></div>
+<div class="dash-top"><div><div class="kicker">Operations overview</div><h1>Good to see you.</h1><p>Here’s what’s happening with your customer enquiries.</p></div><div class="live-pill">● LIVE ENQUIRIES</div></div>
 <div class="admin-stats">
 <div class="admin-stat glass"><div class="stat-top">Total enquiries <span class="stat-icon">▤</span></div><b id="total">0</b><div class="stat-foot">All VDA requests captured here</div></div>
 <div class="admin-stat glass"><div class="stat-top">New enquiries <span class="stat-icon">✦</span></div><b id="newCount">0</b><div class="stat-foot">Waiting for team review</div></div>
@@ -72,6 +72,6 @@
 <div class="table-wrap"><table class="table"><thead><tr><th>Customer</th><th>Request</th><th>Contact</th><th>Location</th><th>Received</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div>
 <div id="empty" class="empty-state"><div class="empty-icon">◇</div><b>No enquiries yet</b><p>New VDA requests will appear here after customers submit the enquiry form.</p></div>
 </div>
-<div class="admin-note">Prototype note: this dashboard currently reads enquiries saved in this browser only. Before launch, connect Supabase authentication, database access policies and server-side email notifications. Do not use the demo passcode for a live website.</div>
+<div class="admin-note">Enquiries are stored in the connected database. Only authorized staff accounts may view customer details. Email alerts require separate server-side configuration.</div>
 </section></div></main>
-<script src="common.js"></script><script src="admin.js"></script></body></html>
+<script src="common.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="config.js"></script><script src="backend.js"></script><script src="admin.js"></script></body></html>

@@ -14,3 +14,65 @@ body{background:radial-gradient(ellipse at 10% 0%,rgba(37,140,184,.17),transpare
 .service:hover{border-color:rgba(217,185,121,.48);box-shadow:0 28px 70px rgba(0,0,0,.3),0 0 32px rgba(36,171,194,.1)}
 .kicker{color:#d7ba7a}
 .hero{background:radial-gradient(ellipse at 82% 38%,rgba(16,145,179,.25),transparent 38%),linear-gradient(120deg,rgba(4,14,30,.96),rgba(8,38,62,.76))}
+
+/* SKYNESS Midnight Luxury theme refresh */
+:root{
+ --bg:#07090d;--bg2:#10151d;--cyan:#d7b46a;--blue:#b68a3e;--gold:#e7c77f;
+ --white:#f7f4ed;--muted:#b8b2a5;--glass:rgba(255,255,255,.055);
+ --line:rgba(224,194,133,.22);--shadow:0 26px 85px rgba(0,0,0,.48)
+}
+body{
+ background:
+ radial-gradient(ellipse at 76% 18%,rgba(178,128,51,.18),transparent 34%),
+ radial-gradient(ellipse at 10% 55%,rgba(58,71,86,.15),transparent 40%),
+ linear-gradient(145deg,#050609 0%,#0b1018 48%,#07090d 100%);
+ color:var(--white)
+}
+.topline{background:linear-gradient(90deg,#6f4b1b,#f2d58e,#a77a36,#f4dda4)}
+.header{background:rgba(5,7,11,.82);border-bottom:1px solid rgba(221,187,119,.2)}
+.brand img{width:190px;height:auto;object-fit:contain;background:transparent;border-radius:0}
+.brand span{display:none}
+.btn{background:linear-gradient(120deg,#a9772f,#f1d48a 52%,#b98a43);color:#15110a;box-shadow:0 12px 34px rgba(192,145,66,.2),inset 0 1px 0 rgba(255,255,255,.48)}
+.btn.ghost{background:rgba(255,255,255,.035);color:#f4e8cb;border:1px solid rgba(221,187,119,.48);box-shadow:none}
+.hero{background:radial-gradient(ellipse at 78% 40%,rgba(173,123,49,.2),transparent 38%),linear-gradient(115deg,rgba(5,7,11,.97),rgba(13,18,25,.82))}
+.eyebrow,.kicker{color:#e5c57f}
+h1 span{color:#e8c77e}
+.hero-visual img,.about-art img{filter:drop-shadow(0 24px 60px rgba(0,0,0,.55))}
+.float{border-color:rgba(220,185,112,.32);background:rgba(20,19,17,.7)}
+.float b,.service a,.ico,.contact-line i{color:#e7c77f}
+.strip{background:rgba(255,255,255,.025);border-color:rgba(220,185,112,.14)}
+.glass,.service,.form,.why-card,.about-art{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border-color:rgba(221,187,119,.18);box-shadow:0 22px 65px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.09)}
+.service:hover{border-color:rgba(231,199,126,.6);box-shadow:0 28px 70px rgba(0,0,0,.45),0 0 32px rgba(190,145,69,.12)}
+.ico{background:rgba(202,158,79,.10);border-color:rgba(221,187,119,.25)}
+.cta{background:linear-gradient(110deg,rgba(33,27,18,.9),rgba(10,17,24,.9));border-color:rgba(221,187,119,.2)}
+.field input,.field select,.field textarea{background:rgba(3,5,8,.58);border-color:rgba(221,187,119,.2)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#e3c27b;box-shadow:0 0 0 3px rgba(214,174,99,.13)}
+.footer{background:rgba(3,4,7,.88);border-color:rgba(221,187,119,.18)}
+@media(max-width:720px){.brand img{width:160px}.links{background:rgba(6,8,12,.98);border-color:rgba(221,187,119,.24)}}
+
+/* SKYNESS Midnight Luxury v2: original bird logo retained, recoloured */
+:root{--bg:#07090d;--bg2:#10151d;--cyan:#d7b46a;--blue:#b68a3e;--gold:#e7c77f;--white:#f7f4ed;--muted:#b8b2a5;--glass:rgba(255,255,255,.055);--line:rgba(224,194,133,.22);--shadow:0 26px 85px rgba(0,0,0,.48)}
+body{background:radial-gradient(ellipse at 76% 18%,rgba(178,128,51,.18),transparent 34%),radial-gradient(ellipse at 10% 55%,rgba(58,71,86,.15),transparent 40%),linear-gradient(145deg,#050609 0%,#0b1018 48%,#07090d 100%);color:var(--white)}
+.header{background:rgba(5,7,11,.86);border-bottom:1px solid rgba(221,187,119,.2)}
+.brand img{width:62px;height:62px;object-fit:contain;background:transparent;border-radius:0;padding:0}
+.hero{background:radial-gradient(ellipse at 80% 45%,rgba(178,128,51,.16),transparent 36%),linear-gradient(120deg,rgba(4,8,14,.96),rgba(15,20,27,.82))}
+.hero:after{border-color:rgba(231,199,126,.16)}
+.eyebrow,.kicker{color:#e5c57f}
+h1 span{color:#e8c77e}
+.btn{background:linear-gradient(120deg,#a9772f,#f1d48a 52%,#b98a43);color:#15110a;box-shadow:0 12px 34px rgba(192,145,66,.2),inset 0 1px 0 rgba(255,255,255,.48)}
+.btn.ghost{background:rgba(255,255,255,.035);color:#f4e8cb;border:1px solid rgba(221,187,119,.48);box-shadow:none}
+.glass,.service,.form,.why-card,.about-art{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border-color:rgba(221,187,119,.18);box-shadow:0 22px 65px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.09)}
+.service:hover{border-color:rgba(231,199,126,.6);box-shadow:0 28px 70px rgba(0,0,0,.45),0 0 32px rgba(190,145,69,.12)}
+.ico,.contact-line i{color:#e7c77f;background:rgba(202,158,79,.10);border-color:rgba(221,187,119,.25)}
+.field input,.field select,.field textarea{background:rgba(3,5,8,.58);border-color:rgba(221,187,119,.2)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#e3c27b;box-shadow:0 0 0 3px rgba(214,174,99,.13)}
+.footer{background:rgba(3,4,7,.88);border-color:rgba(221,187,119,.18)}
+/* Hero art is an abstract digital-finance motif; no vehicle imagery */
+.hero-visual{border:1px solid rgba(221,187,119,.18);border-radius:32px;background:radial-gradient(circle at 50% 42%,rgba(221,187,119,.17),transparent 26%),radial-gradient(circle at 50% 50%,rgba(255,255,255,.045),transparent 58%),linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.01));overflow:hidden}
+.hero-visual:before{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(231,199,126,.45);border-radius:50%;box-shadow:0 0 0 28px rgba(231,199,126,.045),0 0 0 58px rgba(231,199,126,.025),0 0 65px rgba(207,162,81,.15)}
+.hero-visual img{width:min(260px,68%);height:auto;aspect-ratio:auto;object-fit:contain;border:0;border-radius:0;box-shadow:none;position:relative;z-index:1}
+.float{border-color:rgba(220,185,112,.32);background:rgba(20,19,17,.76)}
+.float b{color:#e7c77f}
+.strip{background:rgba(255,255,255,.025);border-color:rgba(220,185,112,.14)}
+.cta{background:linear-gradient(110deg,rgba(33,27,18,.9),rgba(10,17,24,.9));border-color:rgba(221,187,119,.2)}
+@media(max-width:720px){.brand img{width:54px;height:54px}.links{background:rgba(6,8,12,.98);border-color:rgba(221,187,119,.24)}}

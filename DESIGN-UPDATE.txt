@@ -1,0 +1,6 @@
+SKYNESS Midnight Luxury v2
+- Retained the original SKYNESS bird logo and recoloured its blue/cyan parts to champagne gold, with the dark wordmark changed to warm white for dark backgrounds.
+- Removed the newly invented wordmark logo.
+- Hero visual uses an abstract digital-finance motif; no car or bike imagery.
+- Midnight black/navy background, champagne-gold accents and glass panels.
+- This is a front-end prototype; production backend/database/email setup still requires credentials and configuration.
